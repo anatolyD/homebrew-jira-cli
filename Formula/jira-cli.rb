@@ -5,13 +5,13 @@
 class JiraCli < Formula
   desc "🔥 Feature-rich interactive Jira command-line"
   homepage "https://github.com/anatolyD/jira-cli"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anatolyD/jira-cli/releases/download/v1.8.0/jira_1.8.0_macOS_x86_64.tar.gz"
-      sha256 "a20a8bc30d2b3ea9869b932151adf358959f0e7f402b19488f878cd8c647b5c7"
+      url "https://github.com/anatolyD/jira-cli/releases/download/v1.9.0/jira_1.9.0_macOS_x86_64.tar.gz"
+      sha256 "3581f5d981378b730308548d0728877c4ee8dfccc3c34ee60a1406e2b1e706d7"
 
       define_method(:install) do
         if build.head?
@@ -24,8 +24,8 @@ class JiraCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anatolyD/jira-cli/releases/download/v1.8.0/jira_1.8.0_macOS_arm64.tar.gz"
-      sha256 "1d084b747d828b432f959cde96a564bc997b3e47cb4188a6284079c83d3b34f3"
+      url "https://github.com/anatolyD/jira-cli/releases/download/v1.9.0/jira_1.9.0_macOS_arm64.tar.gz"
+      sha256 "674e19fd35c9baf5d4f695a236f91cdb93ac89099914ab6a7171562a12c9ded1"
 
       define_method(:install) do
         if build.head?
@@ -41,8 +41,8 @@ class JiraCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anatolyD/jira-cli/releases/download/v1.8.0/jira_1.8.0_linux_x86_64.tar.gz"
-      sha256 "3a0576cacd2830468237485b5567bd5772ad9b1e54128d1a146301a8f6cd22fd"
+      url "https://github.com/anatolyD/jira-cli/releases/download/v1.9.0/jira_1.9.0_linux_x86_64.tar.gz"
+      sha256 "cc86cb0afab69134bbe470fdae28094e73a8421b0c31e41a07a1e4340149a67d"
       define_method(:install) do
         if build.head?
           system "make", "install"
@@ -54,8 +54,8 @@ class JiraCli < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/anatolyD/jira-cli/releases/download/v1.8.0/jira_1.8.0_linux_armv6.tar.gz"
-      sha256 "edc06d29fe881c1cf070fcdfac825b8e4b05e428ed33afc479b5a9b0dca759f8"
+      url "https://github.com/anatolyD/jira-cli/releases/download/v1.9.0/jira_1.9.0_linux_armv6.tar.gz"
+      sha256 "392c7c07cda5f2f78d75452df325b75572449513b42dfbf13f91b01d0a078fb6"
       define_method(:install) do
         if build.head?
           system "make", "install"
@@ -67,8 +67,8 @@ class JiraCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anatolyD/jira-cli/releases/download/v1.8.0/jira_1.8.0_linux_arm64.tar.gz"
-      sha256 "87e0fc66e7190a0276b7cc3638a21b32d5673598bdc98a401b14383826c2e0b0"
+      url "https://github.com/anatolyD/jira-cli/releases/download/v1.9.0/jira_1.9.0_linux_arm64.tar.gz"
+      sha256 "0ebda343f1aed2e436d81dc20a60f3108c646f56a160b9c0fef37ae75fed2719"
       define_method(:install) do
         if build.head?
           system "make", "install"
